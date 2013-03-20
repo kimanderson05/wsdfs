@@ -11,15 +11,17 @@ Light Orange	#e8ab36
 */
 
 /* --------------------------site-wide CSS------------------------*/
-#body {
-	margin: 0;
+body {
+	max-width: 960px; 
+	font: 100%/1.5 Helvetica, Arial, san-serif;
+	margin: 0 auto;	
 	padding: 0;
+	background-color: #f4bb61;
 }
 
 #wrapper {
-	width: 960px;
-	margin: 0 auto;
-	padding: 10px;
+	width: 100% /*960px*/
+	margin-top: 0%;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #000000;
@@ -36,32 +38,32 @@ Light Orange	#e8ab36
 #sitebranding {
 	float: left;
 	text-align: center;
-	width: 500px;
+	width: 51.5625%; /* 495px/960px */
 	height: 188px;
 	background-color: #dddbdb;
-	padding-bottom: 10px;
-	margin: 0;
+	padding-bottom: 1.010101%; /* 5px/495px */
+	margin: 0%;
+}
+
+#sitebranding img {
+	max-width: 100%;
 }
 
 .tagline p {
-	width: 500px;
-	height: 60px;
+	width: 51.5625%; /* 495px/960px */
+	height: 80px;
 	margin: 0 0;
 }
 
 #benefit {
-	float: left;
-	width: 460px;
+	float: right;
+	width: 48.4375%; /* 465px/960px */
 	height: 140px;
 	text-align: center;
 	margin: 0px;
 	background-color: #dddbdb;
 	font: 25px "Sevillana", cursive;
 } 
-
-.buynow {
-	font: 35px Arial, sans-serif;
-}
 
 .button {
 	display: inline-block;
@@ -70,6 +72,7 @@ Light Orange	#e8ab36
 	text-align: center;
 	text-decoration: none;
 	font: 14px/100% Arial, Helvetica, sans-serif;
+	background-color: #94cff1;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
@@ -88,10 +91,10 @@ Light Orange	#e8ab36
 }
 
 #navigation {
-	float: left;
-	width: 460px;
+	float: right;
+	width: 48.4375%; /* 465px/960px */
 	height: 58px;
-	margin: 0px;
+	margin: 0%;
 	background-color: #dddbdb;
 }
 
@@ -106,7 +109,7 @@ Light Orange	#e8ab36
 	outline: none;
 	cursor: pointer;
 	text-align: center;
-	padding: 10px;
+	padding: 2.365591%; /* 11px/465px */
 	margin: 0 auto;
 }
 
@@ -124,7 +127,7 @@ a:visited {
 }
 
 a:hover {
-	color: #e8ab36;
+	color: #ff0000;
 	opacity: 0.5;
 }
 
@@ -132,54 +135,71 @@ a:active {
 	color: #3a4247;
 }
 
+.footer {
+	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	padding: 3.125% 0%; /* 30px 0px */
+}
+
 /*---------------------------Index Page CSS---------------------------*/
 
-.grouppic {
+#group_pic {
 	float: right;
 	margin: 0px;
 }
 
+#group_pic img {
+	max-width: 100%;
+}
 
 #homepg {
-	margin: 178px 0px;
-	border: 1px none #000;
-	padding: 40px 0px;
-} 
+	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	padding: 3.125% 0%; /* 30px 0px */
+}
+
+#puzzle {
+	width: 20.833333%; /* 200px/960px */
+	height: 300px;
+	padding: 2.5%; /* 5px/200px */
+}
+
+#puzzle img {
+	max-width: 100%;
+}
 
 p.autism {
-	margin: 12px 30px;
-	padding: 10px;
+	margin: 1.041667% 2.08333%; /* 10px/960px 20px/960px */
+	padding-left: 7.69208%; /* 20px/260px */
 }
 
-span.quote {
-	font-style: italic;
-	text-align: left;
-	padding: 5px 5px;
-	margin: 10px 0px;
-}
-
-span.quotename {
-	text-align: left;
-	padding: 55px;
-}
+.quote {
+	padding-left: 30%; /* 60px/200px */
+	}
 
 #welcome {
-	padding-top: 40px;
-	padding-bottom: 10px;
-	font: 15px "Sevillana", cursive;
+	padding: 4.166667% 2.083333% 0%; 40px/960px
+	font: 1.875ems Helvetica, Arial, san-serif; /* 30px */
 	color: #36a6e8;
 	text-shadow: 2px 2px 2px #111;
 }
 
-aside.events {
-	padding-top: 25px;
+article.content {
+	padding: 0% 2.083333%; /* 20px/960px */
 }
 
-p.stopfloat { 
+aside.events {
+	padding: 2.604167% 2.083333% /* 25px/960px 20px/960px */
+}
+
+.stopfloat { 
 	clear: both;
 }
 
 /*---------------------------Service Page CSS---------------------------*/
+
+#service {
+	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	padding: 3.125% 0%; /* 30px 0px */
+}
 
 .assessment li {
 	list-style-type: square;
@@ -193,6 +213,11 @@ p.stopfloat {
 
 /*---------------------------Photo Gallery Page CSS---------------------------*/
 
+#gallery {
+	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	padding: 3.125% 0%; /* 30px 0px */
+}
+
 .images li {
 	display: block;
 	display: inline;
@@ -200,12 +225,57 @@ p.stopfloat {
 	padding: 10px;
 	margin: 0 auto;
 }
+
 /*---------------------------Sign Up Page CSS---------------------------*/
 
 
 #content {
-	margin: 2px 2px;
-	padding: 10px;
+	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	padding: 3.125% 0%; /* 30px 0px */
 	background-color: #75c4f2;
 	border: 2px solid #111;
+}
+
+/*----Tablet Portrait Size to Standard 960 (devices and browsers)----*/
+@media screen and (min-width:768px) and (max-width:959px) {
+	/*#group_pic img {display: none;}*/
+}
+
+/*----Mobile Landscape Size to Tablet Portrait (devices and browsers)----*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}
+
+/*----Mobile Portrait Size to Mobile Landscape Size (devices and browsers)----*/
+@media only screen and (max-width: 479px) {
+	#group_pic img { display: none; }
+	
+	#wrapper {
+	border: none;}
+	
+	#sitebranding {
+	width: 100%; /* 960px/960px */
+	height: 250	px;
+	}
+	
+	#benefit {
+	width: 100%; /* 465px/960px */
+	height: 140px;
+	} 
+
+	#navigation {
+	width: 100%; /* 345px/960px */
+	height: 225px;
+	padding: 0px 20px;
+	}
+	
+	.mainnav li { 
+	display: block; 
+	line-height: 30px;
+	}
+	
+	#puzzle {
+	display: none;
+	}
+	
 }
