@@ -20,12 +20,12 @@ body {
 }
 
 #wrapper {
-	width: 100% /*960px*/
+	max-width: 100% /*960px*/
 	margin-top: 0%;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #000000;
-	background-image: url("images/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-repeat: repeat-x;
 	background-color: #fff;
 	box-shadow: 5px 5px 5px #666;
@@ -34,11 +34,11 @@ body {
 }
 
 
-/*---------------------------Header CSS---------------------------*/
+/*---------------------------Header & Footer CSS---------------------------*/
 #sitebranding {
 	float: left;
 	text-align: center;
-	width: 51.5625%; /* 495px/960px */
+	width: 48.4375%; /* 465px/960px */
 	height: 188px;
 	background-color: #dddbdb;
 	padding-bottom: 1.010101%; /* 5px/495px */
@@ -50,14 +50,14 @@ body {
 }
 
 .tagline p {
-	width: 51.5625%; /* 495px/960px */
+	width: 48.4375%; /* 465px/960px */
 	height: 80px;
 	margin: 0 0;
 }
 
 #benefit {
 	float: right;
-	width: 48.4375%; /* 465px/960px */
+	width: 51.5625%; /* 495px/960px */
 	height: 140px;
 	text-align: center;
 	margin: 0px;
@@ -92,7 +92,7 @@ body {
 
 #navigation {
 	float: right;
-	width: 48.4375%; /* 465px/960px */
+	width: 51.5625%; /* 495px/960px */
 	height: 58px;
 	margin: 0%;
 	background-color: #dddbdb;
@@ -100,7 +100,8 @@ body {
 
 .mainnav li {
 	display: inline-block;
-	line-height: 20px;
+	height: 19px;
+	line-height: 19px;
 	border: 1px solid gray;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -145,6 +146,7 @@ a:active {
 #group_pic {
 	float: right;
 	margin: 0px;
+	width: 72.916667%; /* 700px/960px */
 }
 
 #group_pic img {
@@ -152,18 +154,24 @@ a:active {
 }
 
 #homepg {
-	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	margin: 4.166667%; /* 40px/960px */
 	padding: 3.125% 0%; /* 30px 0px */
 }
 
-#puzzle {
+#puzzle1 {
 	width: 20.833333%; /* 200px/960px */
-	height: 300px;
+	height: 275px;
 	padding: 2.5%; /* 5px/200px */
 }
 
-#puzzle img {
+#puzzle1 img {
 	max-width: 100%;
+}
+ 
+#puzzle2 {
+	width: 20.833333%; /* 200px/960px */
+	padding: 2.5%;  /* 5px/200px */ 
+	font: 1.875ems Helvetica, Arial, san-serif;
 }
 
 p.autism {
@@ -172,11 +180,11 @@ p.autism {
 }
 
 .quote {
-	padding-left: 30%; /* 60px/200px */
+	padding-left: 40%; /* 60px/200px */
 	}
 
 #welcome {
-	padding: 4.166667% 2.083333% 0%; 40px/960px
+	padding: 0% 2.083333%; /* 0%; 40px/960px */
 	font: 1.875ems Helvetica, Arial, san-serif; /* 30px */
 	color: #36a6e8;
 	text-shadow: 2px 2px 2px #111;
@@ -191,12 +199,12 @@ aside.events {
 }
 
 .stopfloat { 
-	clear: both;
+	clear: right;
 }
 
 /*---------------------------Service Page CSS---------------------------*/
 
-#service {
+#service1 {
 	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
 	padding: 3.125% 0%; /* 30px 0px */
 }
@@ -236,18 +244,100 @@ aside.events {
 	border: 2px solid #111;
 }
 
+/*------------------------------Media Queries------------------------------------*/
+
 /*----Tablet Portrait Size to Standard 960 (devices and browsers)----*/
+
 @media screen and (min-width:768px) and (max-width:959px) {
-	/*#group_pic img {display: none;}*/
+	#wrapper {
+	border: none;
+	}
+	
+	#sitebranding {
+	width: 100%; /* 960px/960px */
+	height: 250	px;
+	}
+	
+	#benefit {
+	width: 100%; /* 960px/960px */
+	height: 150px;
+	} 
+	
+	#navigation {
+	width: 100%; /* 960px/960px */
+	height: 70px;
+	padding: 0% 3.6458333%; /* 0px/960px 35px/960px */
+	}
+	
+	#puzzle {
+	display: none;
+	}
+	
+	.quote {
+	padding-left: 20%; /* 40px/200px */
+	}
 }
 
 /*----Mobile Landscape Size to Tablet Portrait (devices and browsers)----*/
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/*----sitewide----*/
+	#wrapper {
+	border: none;
+	}
 	
+	#group_pic img { display: none; }
+	
+	#sitebranding {
+	width: 100%; /* 960px/960px */
+	height: 250	px;
+	}
+	
+	#benefit {
+	width: 100%; /* 960px/960px */
+	height: 150px;
+	} 
+	
+	#navigation {
+	width: 100%; /* 960px/960px */
+	height: 70px;
+	padding: 0% 3.6458333%; /* 0px/960px 35px/960px */
+	}
+	
+	#puzzle {
+	width: 100%; /* 960px */
+	}
+	
+	#puzzle1 {
+	margin-top: 5.2083333%; /* 50px/960px */
+	width: 26.041667%; /* 250px/960px */
+	float: left;
+	}
+	
+	#puzzle2 {
+	text-align: center;
+	margin-top: 7.8125%; /* 75px/960px */
+	padding-right: 5.2083333%; /* 50px/960px */
+	width: 41.666667%; /* 400px/960px */	
+	float: right;
+	}
+	
+	#welcome {
+	clear: both;
+	padding-top: 0%;
+	}
+	
+/*----service----*/
+	#extras {
+	-moz-column-count: 1;
+	}
 }
 
 /*----Mobile Portrait Size to Mobile Landscape Size (devices and browsers)----*/
+
 @media only screen and (max-width: 479px) {
+	
 	#group_pic img { display: none; }
 	
 	#wrapper {
@@ -264,9 +354,9 @@ aside.events {
 	} 
 
 	#navigation {
-	width: 100%; /* 345px/960px */
+	width: 100%; /* 960px/960px */
 	height: 225px;
-	padding: 0px 20px;
+	padding: 0% 2.0833333%; /* 0px/960px 20px/960px */
 	}
 	
 	.mainnav li { 
@@ -276,6 +366,10 @@ aside.events {
 	
 	#puzzle {
 	display: none;
+	}
+	
+	#extras {
+	-moz-column-count: 1;
 	}
 	
 }
