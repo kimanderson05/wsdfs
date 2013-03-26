@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+	
 	<head>
 		<title>Little Star Center of Jacksonville</title>
 		<meta charset="utf-8"/>
@@ -9,51 +11,183 @@
 	</head>
 	
 <body>
-
 	<div id="wrapper">
 	
 	<header>
 		<div id="sitebranding">
-		<p><a href="index.html"><img src="images/logo.png" width="400" height="109" alt="Little Star Center Logo" title="Little Star Logo"/></a></p>
-		<p class="tagline">Education for children diagnosed with Autism<br/> and other developmental delays.</p>
+			<p><a href="index.html"><img src="images/logo.png" width="400" height="109" alt="Little Star Center Logo" title="Little Star Logo"/></a></p>
+			<p class="tagline">Education for children diagnosed with Autism<br/> and other developmental delays.</p>
 		</div><!--end of sitebranding-->
 	</header><!--end of header-->
 	
-	<div id="benefit">
-		<p>Now Selling Tickets to<br/><span style="color: #ff0000">Fire</span> and <span style="color: #36a6e8">Ice!</span><br/>
-		<a href="signup.html" class="button" class="buynow">Buy Now!!!</a></p>
-	</div>
+		<div id="benefit">
+			<p>Now Selling Tickets to<br/><span style="color: #ff0000">Fire</span> and <span style="color: #36a6e8">Ice!</span><br/>
+			<a href="signup.html" class="button">Buy Now!!!</a></p>
+		</div> <!--end of benefit-->
 	
-	<div id="navigation">
-		<ul class="mainnav">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="services.html">Services</a></li>
-		<li><a href="gallery.html">Photo Gallery</a></li>
-		<li><a href="signup.html">Sign Up Now!</a></li>
-		</ul>
-	</div><!--top screen navigation-->
+		<div id="navigation">
+			<ul class="mainnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="gallery.html">Photo Gallery</a></li>
+				<li><a href="signup.html">Sign Up Now!</a></li>
+			</ul>
+		</div><!--end of top screen navigation-->
 	
-	<!--<div id="signup">-->
 	
-	<div id="content">
-
-	<p class="stopfloat">Sign up page... to be created later</p>
-
-	<!--</div>-->
-
-	</div><!--end of signup-->
-
+	<form method="post" action="signup.html" class="signup_form">
+		
+		<fieldset> <!--signup form-->
+		
+		<fieldset class="personal_info">
+			
+			<legend>Tell us about yourself...</legend>
+				
+				<div>
+					<label for="yourname">Name:</label>
+					<input type="text" name="yourname" id="yourname" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="streetaddress">Street Address:</label>
+					<input type="text" name="streetaddress" id="streetaddress" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="streetaddress2">Street Address (optional):</label>
+					<input type="text" name="streetaddress2" id="streetaddress2" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="zip">Zip Code:</label>
+					<input type="text" name="zip" id="zip" class="formfield"/>
+				</div>
+		
+				<div>
+					<label for="homephone">Phone (home):</label>
+					<input type="text" name="homephone" id="homephone" class="formfield" size="14" value="(xxx) xxx-xxxx"/>
+				</div>
+			
+				<div>
+					<label for="cellphone">Phone (cell):</label>
+					<input type="text" name="cellphone" id="cellphone" class="formfield" size="14" value="(xxx) xxx-xxxx"/>
+				</div>
+			
+				<div>
+					<label for="email">Email Address:</label>
+					<input type="text" name="email" id="email" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="contactmethod">Preferred method of contact:</label>
+						<select name="contactmethod" id="contactmethod" class="dropdown">
+							<option>Mail</option>
+							<option>Phone (home)</option>
+							<option>Phone (cell)</option>
+							<option selected="selected">Email</option>
+						</select>
+				</div>
+		
+		</fieldset> <!--end of personal_info-->
+		
+		<fieldset class="login_form">
+			
+			<legend>Login Information</legend>
+				
+				<div>
+					<label for="username">Create Username:</label>
+					<input type="text" name="username" id="username" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" class="formfield"/>
+				</div>
+			
+				<div>
+					<input type="checkbox" name="terms" id="terms"/>
+					<label for="terms">I agree to the terms and conditions</label>
+					</div>
+				
+				<div>
+					<input type="checkbox" name="newsletter" id="newsletter" checked="checked"/>
+					<label for="newsletter">Sign me up for your weekly newsletter!</label>
+				</div>
+			
+				<div>
+					<input type="checkbox" name="offers" id="offers" checked="checked"/>
+					<label for="offers">Contact me with special members only offers!</label>
+				</div>
+		
+		</fieldset> <!--end of login_form-->
+		
+				<div><input type="submit" value="Sign Me Up!"/></div>
+		
+		</fieldset> <!--end of signup-->
+		
+	</form> <!--end of signup_form-->
+		
+	<form method="post" action="signup.html" class="tickets_form">
+		
+		<fieldset>
+	
+			<legend>Purchase Tickets</legend>
+			
+				<div>
+					<label for="cardname">Name on Credit Card:</label>
+					<input type="text" name="cardname" id="cardname" class="formfield"/>
+				</div>
+			
+				<div>
+					<label for="cardnumber">Credit Card Number:</label>
+					<input type="text" name="cardnumber" id="cardnumber" class="formfield"/>
+				</div>
+			
+				<label for="numberoftickets">Number of Tickets:</label>
+					<select name="numberoftickets" id="numberoftickets" class="dropdown">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select>
+			
+				<div>
+					<label for="total">Total:</label>
+					<input type="text" name="total" id="total" value="$" class="formfield"/>
+				</div>
+			
+				<div><input type="submit" value="Purchase Tickets"/></div>
+		
+		</fieldset>
+	
+	</form> <!--end of tickets form-->
+	
 	<footer class="footer">
-<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!"/></a>
-</p>
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/></a>
+		</p>
 
-	<p>Site created by Kimberly R. Anderson. &copy;2013</p>
+		<p>Site created by Kimberly R. Anderson. &copy;2013</p>
+	
 	</footer>
 	
-	</div>
+	</div> <!--end of wrapper-->
 
 </body>
 		

@@ -20,7 +20,7 @@ body {
 }
 
 #wrapper {
-	max-width: 100% /*960px*/
+	max-width: 100%; /*960px*/
 	margin-top: 0%;
 	border-style: solid;
 	border-width: 2px;
@@ -139,6 +139,7 @@ a:active {
 .footer {
 	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
 	padding: 3.125% 0%; /* 30px 0px */
+	clear: both;
 }
 
 /*---------------------------Index Page CSS---------------------------*/
@@ -171,7 +172,7 @@ a:active {
 #puzzle2 {
 	width: 20.833333%; /* 200px/960px */
 	padding: 2.5%;  /* 5px/200px */ 
-	font: 1.875ems Helvetica, Arial, san-serif;
+	font: Helvetica, Arial, san-serif;
 }
 
 p.autism {
@@ -185,7 +186,7 @@ p.autism {
 
 #welcome {
 	padding: 0% 2.083333%; /* 0%; 40px/960px */
-	font: 1.875ems Helvetica, Arial, san-serif; /* 30px */
+	font: Helvetica, Arial, san-serif; /* 30px */
 	color: #36a6e8;
 	text-shadow: 2px 2px 2px #111;
 }
@@ -194,12 +195,27 @@ article.content {
 	padding: 0% 2.083333%; /* 20px/960px */
 }
 
-aside.events {
-	padding: 2.604167% 2.083333% /* 25px/960px 20px/960px */
+table.events1 {
+	margin: 50px 20px;
+	border-collapse: collapse;
+	border: 1px solid #000;	
 }
 
+th {
+	text-align: left;
+	background: #666;
+	color: #fff;
+	border: 1px solid #000;
+	padding: 5px;
+	}
+	
+	td {
+	border: 1px solid #000;
+	padding: 5px;
+	}
+
 .stopfloat { 
-	clear: right;
+	clear: both;
 }
 
 /*---------------------------Service Page CSS---------------------------*/
@@ -237,13 +253,44 @@ aside.events {
 /*---------------------------Sign Up Page CSS---------------------------*/
 
 
-#content {
-	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
-	padding: 3.125% 0%; /* 30px 0px */
-	background-color: #75c4f2;
-	border: 2px solid #111;
-}
-
+	input:focus {
+	background: #dddbdb;
+	}
+	
+	.signup_form {
+	margin: 50px 20px 0 20px;
+	padding: 20px 0px;
+	width: 47%;
+	float: left;
+	}
+	
+	.personal_info {
+	padding: 20px;
+	}
+	
+	.login_form {
+	padding: 20px;
+	}
+	
+	.tickets_form {
+	margin: 50px 20px;
+	padding: 20px;
+	width: 40%;
+	float: left;
+	}
+	
+	.formfield {
+		width: 150px;
+		margin: 0 auto;
+		float: right;
+	}
+	
+	.dropdown {
+		width: 75px;
+		float: right;
+	}
+	
+	
 /*------------------------------Media Queries------------------------------------*/
 
 /*----Tablet Portrait Size to Standard 960 (devices and browsers)----*/
@@ -255,7 +302,6 @@ aside.events {
 	
 	#sitebranding {
 	width: 100%; /* 960px/960px */
-	height: 250	px;
 	}
 	
 	#benefit {
@@ -291,7 +337,6 @@ aside.events {
 	
 	#sitebranding {
 	width: 100%; /* 960px/960px */
-	height: 250	px;
 	}
 	
 	#benefit {
@@ -345,7 +390,6 @@ aside.events {
 	
 	#sitebranding {
 	width: 100%; /* 960px/960px */
-	height: 250	px;
 	}
 	
 	#benefit {
